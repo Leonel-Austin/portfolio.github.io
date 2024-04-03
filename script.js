@@ -47,3 +47,15 @@ window.onscroll = () => {
     let footer = document.querySelector('footer');
     footer.classList.toggle('show-animate', this.innerHeight + this.scrollY >= document.scrollingElement.scrollHeight);
 }
+// Collapse Toggle 
+function toggleContent() {
+    var collapsedContent = document.querySelector('.collapsed-content');
+    var readMoreBtn = document.querySelector('.read-more');
+    if (collapsedContent.classList.contains('d-none')) {
+      collapsedContent.classList.remove('d-none');
+      readMoreBtn.textContent = 'Show Less';
+    } else {
+      collapsedContent.classList.add('d-none');
+      readMoreBtn.textContent = 'Read More';
+    }
+  }
