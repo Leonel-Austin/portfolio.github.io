@@ -337,6 +337,9 @@ span {
 .btn-box.btns a::before {
     background: var(--second-bg-color);
 }
+.btn-box.btns button::before {
+    background: var(--second-bg-color);
+}
 
 /* Education */
 
